@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us</p>
+        </header>
+    
+        <form id="survey-form">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>    
+            </div>
+            
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+    
+            <div class="form-field">
+                <label for="number">Age</label>
+                <input type="number" id="number" min="1" max="99" placeholder="Age (Optional)">    
+            </div>
+    
+            <div class="form-field">
+                <p>Status</p>
+                <select id="dropdown" required>
+                    <option disabled selected>Select your status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+            </div>
+    
+            <div class="form-field">
+                <p>Are you vaccinated against covid 19?</p>
+                <label><input type="radio" name="vaccine-status" value="Yes">Yes</label>
+                <label><input type="radio" name="vaccine-status" value="No">No</label>
+                <label><input type="radio" name="vaccine-status" value="Maybe">Maybe</label>
+            </div>
+            
+            <div class="form-field">
+                <p>What is your favorite color?</p> 
+                <label><input type="checkbox" name="color" value="blue">Blue</label>
+                <label><input type="checkbox" name="color" value="red">Red</label>
+                <label><input type="checkbox" name="color" value="green">Green</label>
+                <label><input type="checkbox" name="color" value="yellow">Yellow</label>
+                <label><input type="checkbox" name="color" value="black">Black</label>
+                <label><input type="checkbox" name="color" value="white">White</label>
+                <label><input type="checkbox" name="color" value="other">Other</label>
+            </div>
+            
+            <div class="form-field">
+                <label for="label-textarea">Would you like to say something?</label>
+                <textarea id="label-textarea" class="textarea-field" placeholder="Enter your comment"></textarea>
+            </div>
+    
+            <div class="form-field">
+                <button type="submit" id="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
